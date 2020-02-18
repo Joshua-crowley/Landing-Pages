@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+.page-section {
+    min-height: 60vh;
+    display: flex;
+}
