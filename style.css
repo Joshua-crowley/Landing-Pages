@@ -12,20 +12,53 @@ body {
 #Navigation-Bar {
     background-color: gray;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-top: 0;
+  }
+
+.logo {
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.nav-bar-options {
+    display: flex;
     justify-content: flex-end;
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
 .Navigation {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.Navigationhref {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.Navigationhref:hover {
+    color: darkblue;
 }
 
 /* Class Sections*/
+
+.spacer {
+    height: 4px;
+    background-color: black;
+}
 
 .page-section {
     min-height: 60vh;
@@ -35,7 +68,7 @@ body {
 }
 
 .page-section:nth-child(odd) {
-    background-color: aquamarine;
+    background-color: white;
 }
 
 .page-section:nth-child(even) {
