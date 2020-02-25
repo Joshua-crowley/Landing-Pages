@@ -33,6 +33,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-right: 15px;
 }
 
 .Navigation {
@@ -61,6 +62,7 @@ body {
 }
 
 .page-section {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     min-height: 60vh;
     display: flex;
     padding-left: 30px;
@@ -68,7 +70,7 @@ body {
 }
 
 .page-section:nth-child(odd) {
-    background-color: white;
+
 }
 
 .page-section:nth-child(even) {
@@ -85,10 +87,33 @@ body {
 #above-fold {
     align-items: center;
     justify-content: center;
+    background-image: url('../Images/forest.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+}
+
+#TheHeader {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 46px;
+    color: white;
 }
 
 #value-prop {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
 
+#value-prop-spacing {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#second-block-image {
+    padding: 20px;
 }
 
 #services {
