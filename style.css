@@ -27,6 +27,11 @@ body {
     max-height: 100px;
 }
 
+.logo:hover {
+    border: 2px solid orange;
+    cursor: pointer;
+}
+
 .nav-bar-options {
     display: flex;
     justify-content: flex-end;
@@ -51,7 +56,7 @@ body {
 }
 
 .Navigationhref:hover {
-    color: darkblue;
+    color: purple;
 }
 
 /* Class Sections*/
@@ -150,19 +155,115 @@ body {
     padding: 20px;
 }
 
-#services {
-
+#games-offered {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #reviews {
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#pricing {
+.review-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.card {
+    margin: 8px;
+    padding: 8px;
+    border: 2px solid #cccccc;
+}
+
+.card > img {
+    max-height: 125px;
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.spacing-for-game-collection {
+    flex-direction: column;
+    align-items: center;
 }
 
 /* More Mobile Friendly*/
 @media only screen and (max-width: 520px) {
+    .nav-bar-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .Navigation {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
 
+    #Spacing1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        max-width: 325px;
+    
+    }
+
+    #second-block-image {
+        padding: 20px;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .page-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #value-prop-spacing {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        max-width: 400px;
+    }
+    
+    #reviews {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card {
+        margin: 8px;
+        padding: 8px;
+        border: 2px solid #cccccc;
+    }
+    
+    .card > img {
+        max-height: 125px;
+        border: 2px solid #cccccc;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    
+    .spacing-for-game-collection {
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
